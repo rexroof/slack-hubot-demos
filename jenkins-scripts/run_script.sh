@@ -16,7 +16,7 @@ SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$SCRIPTDIR/library.sh"
 
 # pseudo security precaution.
-TARGET_SCRIPT=$(basename $JK_SCRIPT)
+TARGET_SCRIPT=$(basename $JENK_SCRIPT)
 
 if [ -f "$SCRIPTDIR/$TARGET_SCRIPT" ] ; then
   source $SCRIPTDIR/$TARGET_SCRIPT
