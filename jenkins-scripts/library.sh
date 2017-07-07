@@ -10,7 +10,7 @@ declare -x $(echo $JSON_OPTIONS | base64 --decode | jq -r "to_entries|map(\"\(.k
 export JENK_SCRIPT=${JENK_SCRIPT-update.sh}
 export SK_CHANNEL=${SK_CHANNEL-jenkins}
 export SK_REPLY=${SK_REPLY-nobody}
-export HUBOT_URL=${HUBOT_URL-http://localhost/}  # should be a global jenkins variable 
+export HUBOT_URL=${HUBOT_URL-http://localhost}  # should be a global jenkins variable
 
 # function for posting to slack
 function slack {
