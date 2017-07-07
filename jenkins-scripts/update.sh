@@ -7,11 +7,11 @@ if [ -z "$JENKINS_HOME" ] ; then
   exit 1
 fi
 
-if [ -d "$WORKSPACE/scripts" ] ; then
+if [ -d "$WORKSPACE/jenkins-scripts" ] ; then
   rsync -av --delete \
-    $WORKSPACE/scripts/ \
+    $WORKSPACE/jenkins-scripts/ \
     ${JENKINS_HOME}/scripts/
 else
-  echo $WORKSPACE/scripts not found, cannot continue
+  echo $WORKSPACE/jenkins-scripts not found, cannot continue
   exit 1
 fi
