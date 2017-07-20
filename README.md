@@ -6,3 +6,14 @@ they can inspire techniques in your own environment, no matter what tools you're
 using.
 Rex Roof is a Deployment Engineer with Blue Newt Software, he became a Sys Admin in
 1995 and has been trying to script his way out of it ever since.
+
+
+ansible-plugins/
+> ansible callback plugins
+
+hubot-scripts/
+> hubot scripts in coffeescript
+
+jenkins-scripts/
+> shell scripts for jenkins setup
+
