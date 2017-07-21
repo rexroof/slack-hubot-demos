@@ -33,7 +33,7 @@ module.exports = (robot) ->
      channel = data.channel
      _now = new Date()
 
-     console.log "#{msgkey} #{channel} #{message} #{Util.inspect data, {depth: null}}"
+     #console.log "#{msgkey} #{channel} #{message} #{Util.inspect data, {depth: null}}"
      ip = req.headers['x-forwarded-for'] or
           req.connection.remoteAddress or
           req.socket.remoteAddress or
