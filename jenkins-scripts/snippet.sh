@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=${1:-/etc/passwd}
+FILE=${1:-/etc/shells}
 FILENAME=$(basename $FILE)
 
 JSON=$(jq -Rs "{ filename: \"$FILENAME\", content: . }" $FILE)
