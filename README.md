@@ -1,6 +1,6 @@
 # Stupid Hubot Tricks
 
-A series of demos to show off  Hubot on Slack patterns I've developed. 
+A series of demos to show off Hubot on Slack patterns I've developed. 
 The demos are very specific to slack and hubot with jenkins and ansible but I hope
 they can inspire techniques in your own environment, no matter what tools you're
 using.
@@ -17,3 +17,6 @@ hubot-scripts/
 jenkins-scripts/
 > shell scripts for jenkins setup
 
+
+Slides can be found here:
+https://docs.google.com/presentation/d/1ke4sqWuArHxEa0u1DaT7YHnQBHBykM-Cgm-FdvrfuUo/edit?usp=sharing
