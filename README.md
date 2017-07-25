@@ -19,4 +19,4 @@ jenkins-scripts/
 
 
 Slides can be found here:
-https://docs.google.com/presentation/d/1ke4sqWuArHxEa0u1DaT7YHnQBHBykM-Cgm-FdvrfuUo/edit?usp=sharing
+[slides.google.com/d/1ke4sqWuArHxEa0u...](https://docs.google.com/presentation/d/1ke4sqWuArHxEa0u1DaT7YHnQBHBykM-Cgm-FdvrfuUo/edit?usp=sharing)
