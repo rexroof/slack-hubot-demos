@@ -1,0 +1,5 @@
+---
+- name: install tmux
+  yum:
+    name: tmux
+  become: true
