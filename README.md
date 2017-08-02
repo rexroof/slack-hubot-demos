@@ -17,6 +17,8 @@ hubot-scripts/
 jenkins-scripts/
 > shell scripts for jenkins setup
 
+ansible-playbooks/
+> ansible playbooks and roles used for demo
 
 Slides can be found here:
 [slides.google.com/d/1ke4sqWuArHxEa0u...](https://docs.google.com/presentation/d/1ke4sqWuArHxEa0u1DaT7YHnQBHBykM-Cgm-FdvrfuUo/edit?usp=sharing)
