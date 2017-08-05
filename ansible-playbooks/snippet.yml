@@ -1,0 +1,8 @@
+---
+# launch aws instance
+- include: launch.yml
+
+- name: do some config management tasks
+  hosts: demo
+  roles:
+    - snippet
