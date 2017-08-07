@@ -1,0 +1,9 @@
+---
+# launch aws instance
+- include: launch.yml
+
+- name: keep slack updated
+  hosts: demo
+  roles:
+    - simple
+    - rick
