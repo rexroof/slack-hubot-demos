@@ -51,5 +51,3 @@ module.exports = (robot) ->
   #   note if 'robot' is out of scope you can also use msg.robot.emit
   robot.on "jenkins-script", (_script, _params, _msg) ->
     jenkinsScript(_script, _params, _msg)
-
-
