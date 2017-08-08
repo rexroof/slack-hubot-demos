@@ -52,7 +52,7 @@ class CallbackModule(CallbackBase):
         hubot_url='{}/status-post/{}'.format(hubot_url,build_tag)
         headers = { 'Content-type': 'application/json' }
         data = json.dumps({ 
-          'channel' : channel, 
+          'channel' : slack_room, 
           'message' : "{}".format(self.task) 
         })
         req = urllib2.Request(hubot_url, data, headers) 
