@@ -12,4 +12,10 @@ if [ -n "${PLUGIN}" ] ; then
 fi
  
 cd $WORKSPACE/ansible-playbooks
-ansible-playbook -vv ${PLAYBOOK}
+
+if [ -f ${PLAYBOOK} ] ; then
+  slack "starting \`ansible-playbook -vv ${PLAYBOOK}\`"
+  ansible-playbook -vv ${PLAYBOOK}
+else
+  slack "cannot find ${PLAYBOOK}"
+fi
