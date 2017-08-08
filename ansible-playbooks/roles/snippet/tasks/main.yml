@@ -1,5 +1,5 @@
 ---
-- name: install tmux
+- name: install badass tmux fork, TMAX
   yum:
-    name: tmax
+    name: TMAX
   become: true
