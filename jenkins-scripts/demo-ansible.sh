@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# triggered via hubot/jenkins
-# run ansible with optional plugin copied into callback_plugins
+cd $WORKSPACE
+git clean -f
 
+PLAYBOOK=${PLAYBOOK-simple.yml}
+PLAYBOOK=$(basename $PLAYBOOK)
+
+if [ -n "${PLUGIN}" ] ; then
+  mkdir -p ansible-playbooks/callback_plugins
+  cp ansible-plugins/$PLUGIN ansible-playbooks/callback_plugins/
+fi
+ 
 cd $WORKSPACE/ansible-playbooks
-rm -rf callback_plugins && mkdir callback_plugins
-cp $WORKSPACE/ansible-plugins/slack_snippet.py callback_plugins/
-
-ansible-playbook -vv snippet.yml
+ansible-playbook -vv ${PLAYBOOK}
