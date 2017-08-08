@@ -42,7 +42,7 @@ jenkinsScript = ( script, params, msg ) ->
     if err
       msg.reply "Jenkins error: #{err}"
     else
-      msg.reply "reqest for jenkins-script:#{script} sent to jenkins (status #{res.statusCode} #{_hs[res.statusCode]})"
+      msg.reply "request jenkins-script: #{script} sent to jenkins (status #{res.statusCode} #{_hs[res.statusCode]})"
       
 
 module.exports = (robot) ->
