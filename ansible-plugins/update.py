@@ -53,7 +53,7 @@ class CallbackModule(CallbackBase):
         headers = { 'Content-type': 'application/json' }
         data = json.dumps({ 
           'channel' : slack_room, 
-          'message' : "{}".format(self.task) 
+          'message' : "{} {}".format(build_tag, self.task) 
         })
         req = urllib2.Request(hubot_url, data, headers) 
         response = urllib2.urlopen(req)
