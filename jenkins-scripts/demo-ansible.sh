@@ -16,6 +16,7 @@ cd $WORKSPACE/ansible-playbooks
 if [ -f ${PLAYBOOK} ] ; then
   slack "starting \`ansible-playbook -vv ${PLAYBOOK}\`"
   ansible-playbook -vv ${PLAYBOOK}
+  slack "demo finished"
 else
   slack "cannot find ${PLAYBOOK}"
 fi
