@@ -15,6 +15,5 @@ module.exports = (robot) ->
     for x of introduction
       setTimeout ((y) ->
         msg.send "#{introduction[y]}"
-        msg.finish()
       ), (1500 * x), x
     msg.finish()
