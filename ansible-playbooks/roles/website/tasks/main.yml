@@ -14,6 +14,5 @@
 
 - name: clone my hugo repo
   git:
-    repo: git@github.com:rexroof/rex-hugo.git
+    repo: https://github.com/rexroof/rex-hugo
     dest: rex-hugo
-    accept_hostkey: yes
