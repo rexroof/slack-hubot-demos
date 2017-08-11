@@ -5,6 +5,7 @@
   become: true
   with_items:
     - nginx
+    - git
     - tmux
 
 - name: start up nginx

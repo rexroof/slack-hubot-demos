@@ -11,3 +11,8 @@
     dest: /usr/local/bin
     remote_src: yes
     extra_opts: [hugo]
+
+- name: clone my hugo repo
+  git:
+    repo: git@github.com:rexroof/rex-hugo.git
+    dest: rex-hugo
