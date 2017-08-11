@@ -15,4 +15,17 @@
 - name: clone my hugo repo
   git:
     repo: https://github.com/rexroof/rex-hugo
-    dest: rex-hugo
+    dest: /tmp/rex-hugo
+
+- name: build hugo site
+  command: hugo
+  args:
+    chdir: /tmp/rex-hugo
+
+- name: sync up hugo site with html
+  become: true
+  synchronize:
+    src: /tmp/rex-hugo/public/
+    dest: /sr/share/nginx/html/
+    delete: yes
+    recursive: yes
