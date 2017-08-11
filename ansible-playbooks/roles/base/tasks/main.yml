@@ -8,6 +8,7 @@
     - tmux
 
 - name: start up nginx
+  become: true
   service:
     name: nginx
     state: started

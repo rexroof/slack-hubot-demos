@@ -5,6 +5,7 @@
     dest: /tmp/hugo.tar.gz
 
 - name: extract hugo
+  become: true
   unarchive:
     src: /tmp/hugo.tar.gz
     dest: /usr/local/bin
