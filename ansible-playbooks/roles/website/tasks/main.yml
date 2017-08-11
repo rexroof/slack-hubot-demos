@@ -16,6 +16,7 @@
   git:
     repo: https://github.com/rexroof/rex-hugo
     dest: /tmp/rex-hugo
+    update: yes
 
 - name: build hugo site
   command: hugo
