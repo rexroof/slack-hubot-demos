@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd $WORKSPACE
-git clean -f
+git clean -d -x -f
 
 PLAYBOOK=${PLAYBOOK-website.yml}
 PLAYBOOK=$(basename $PLAYBOOK)
