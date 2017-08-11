@@ -50,6 +50,15 @@
         "Ebs":{"DeleteOnTermination":true}}]'
       when: false # not needed
 
+    - name: register this with dns on route53
+      route53:
+        state: present
+        zone: demo.neomyte.net
+        record: demo.neomyte.net
+        type: A
+        ttl: 600
+        value: "{{new_ami_public}}"
+
     - name: wait for ssh to come up on instance
       local_action:
         module: wait_for
