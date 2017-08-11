@@ -52,7 +52,7 @@
 
     - name: register this with dns on route53
       route53:
-        state: present
+        command: create
         zone: demo.neomyte.net
         record: demo.neomyte.net
         type: A
