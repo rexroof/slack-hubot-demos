@@ -3,7 +3,7 @@
 cd $WORKSPACE
 git clean -f
 
-PLAYBOOK=${PLAYBOOK-simple.yml}
+PLAYBOOK=${PLAYBOOK-website.yml}
 PLAYBOOK=$(basename $PLAYBOOK)
 
 if [ -n "${PLUGIN}" ] ; then
