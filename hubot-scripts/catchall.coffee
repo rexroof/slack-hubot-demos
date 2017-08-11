@@ -57,4 +57,3 @@ module.exports = (robot) ->
     matches = msg.message.text.match(r)
     if matches != null && matches.length > 1
       wolfram_me(matches[1], msg)
-    msg.finish()
