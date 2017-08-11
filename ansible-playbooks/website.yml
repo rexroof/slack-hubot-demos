@@ -5,4 +5,5 @@
 - name: do some config management tasks
   hosts: demo
   roles:
-    - simple
+    - base
+    - website

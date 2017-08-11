@@ -1,0 +1,14 @@
+---
+- name: install packages
+  yum:
+    name: "{{item}}"
+  become: true
+  with_items:
+    - nginx
+    - tmux
+
+- name: start up nginx
+  service:
+    name: nginx
+    state: started
+    enabled: true

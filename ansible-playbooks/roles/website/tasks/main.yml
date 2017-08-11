@@ -1,0 +1,12 @@
+---
+- name: download hugo
+  get_url:
+    url: "{{hugo_release}}"
+    dest: /tmp/hugo.tar.gz
+
+- name: extract hugo
+  unarchive:
+    src: /tmp/hugo.tar.gz
+    dest: /usr/local/bin
+    remote_src: yes
+    extra_opts: [hugo]
