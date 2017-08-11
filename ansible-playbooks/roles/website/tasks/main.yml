@@ -26,7 +26,6 @@
   become: true
   synchronize:
     src: /tmp/rex-hugo/public/
-    dest: /sr/share/nginx/html/
+    dest: /usr/share/nginx/html/
     delete: yes
     recursive: yes
-  delegate_to: "{{ inventory_hostname }}"
