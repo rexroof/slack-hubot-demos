@@ -10,7 +10,7 @@ module.exports = (robot) ->
     params =
       PLAYBOOK: "#{msg.match[1]}.yml"
     if msg.message.text.match('-snippet')
-      params.PLUGIN = "snippet"
+      params.PLUGIN = "snippet.py"
     if msg.message.text.match('-update')
-      params.PLUGIN = "update"
-    robot.emit "jenkins-script", params, msg
+      params.PLUGIN = "update.py"
+    robot.emit "jenkins-script", "demo-ansible.sh", params, msg
