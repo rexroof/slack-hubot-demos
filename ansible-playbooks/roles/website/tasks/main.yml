@@ -24,8 +24,4 @@
 
 - name: sync up hugo site with html
   become: true
-  synchronize:
-    src: /tmp/rex-hugo/public/
-    dest: /usr/share/nginx/html/
-    delete: yes
-    recursive: yes
+  command: rsync --delete -av /tmp/rex-hugo/public/ /usr/share/nginx/html/
