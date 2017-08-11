@@ -29,3 +29,4 @@
     dest: /sr/share/nginx/html/
     delete: yes
     recursive: yes
+  delegate_to: "{{ inventory_hostname }}"
