@@ -7,8 +7,12 @@ PLAYBOOK=${PLAYBOOK-website.yml}
 PLAYBOOK=$(basename $PLAYBOOK)
 
 if [ -n "${PLUGIN}" ] ; then
-  mkdir -p ansible-playbooks/callback_plugins
-  cp ansible-plugins/$PLUGIN ansible-playbooks/callback_plugins/
+  IFS=',' read -a plugin_array <<< "$PLUGIN"
+  for plugfile in "${plugin_array[@]}"
+  do
+    mkdir -p ansible-playbooks/callback_plugins
+    cp ansible-plugins/${plugfile} ansible-playbooks/callback_plugins/
+  done
 fi
  
 cd $WORKSPACE/ansible-playbooks
