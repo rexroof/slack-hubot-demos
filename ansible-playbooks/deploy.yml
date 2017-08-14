@@ -5,4 +5,6 @@
 - name: do some config management tasks
   hosts: demo
   roles:
-    - snippet
+    - base
+    - deploy
+    - website
