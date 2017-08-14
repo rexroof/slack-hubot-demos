@@ -55,6 +55,7 @@
         command: create
         zone: demo.neomyte.net
         record: demo.neomyte.net
+        overwrite: yes
         type: A
         ttl: 600
         value: "{{new_ami_public}}"
