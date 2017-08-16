@@ -1,12 +1,10 @@
 # Stupid Hubot Tricks
+## Hubot patterns with Slack, Jenkins, and Ansible
 
-A series of demos to show off Hubot on Slack patterns I've developed. 
-The demos are very specific to slack and hubot with jenkins and ansible but I hope
-they can inspire techniques in your own environment, no matter what tools you're
-using.
-Rex Roof is a Deployment Engineer with Blue Newt Software, he became a Sys Admin in
-1995 and has been trying to script his way out of it ever since.
+I've developed patterns to address frustrations I have while doing this thing that people call ChatOps.  These demonstrations are meant to show off these patterns and explain my frustrations.   The demos are very specific to [slack](http:/slack.com/) and [hubot](https://hubot.github.com/) with [jenkins](https://jenkins.io/) and [ansible](https://www.ansible.com/) but I hope they can inspire techniques in your own environment no matter which tools you're using.
 
+
+Rex Roof is a Deployment Engineer with Blue Newt Software, he became a Sys Admin in 1995 and has been trying to script his way out of it ever since.
 
 ansible-plugins/
 > ansible callback plugins
