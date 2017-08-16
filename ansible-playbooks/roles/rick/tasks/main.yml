@@ -1,5 +1,5 @@
 ---
-- name: "role starting"
+- name: "let me sing you a song"
   pause: seconds=5
 
 - name: "We're no strangers to love"
