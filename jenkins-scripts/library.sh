@@ -4,7 +4,8 @@ source /etc/profile
 # common library.
 
 # if we have an JSON_OPTIONS base64 blob, convert it to exported environment:
-declare -x $(echo $JSON_OPTIONS | base64 --decode | jq -r "to_entries|map(\"\(.key)=\(.value|tostring)\")|.[]" )  # we want word splitting.
+# shellcheck disable=SC1117,SC2046,SC2086
+declare -x $(echo $JSON_OPTIONS | base64 --decode | jq -r "to_entries|map(\"\(.key)=\(.value|tostring)\")|.[]" )
 
 # some default values for often-used variables
 export JENK_SCRIPT=${JENK_SCRIPT-update.sh}
