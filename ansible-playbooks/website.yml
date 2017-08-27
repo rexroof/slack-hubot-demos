@@ -2,7 +2,7 @@
 # launch aws instance
 - include: launch.yml
 
-- name: do some config management tasks
+- name: deploy base and website to demo
   hosts: demo
   roles:
     - base

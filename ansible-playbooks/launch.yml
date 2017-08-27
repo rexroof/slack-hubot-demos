@@ -1,5 +1,5 @@
 ---
-- name: create aws linux instance
+- name: launch aws linux instance
   hosts: 127.0.0.1
   vars:
     host_stub: "demo_box"

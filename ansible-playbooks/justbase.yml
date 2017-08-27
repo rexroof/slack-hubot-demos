@@ -2,9 +2,7 @@
 # launch aws instance
 - include: launch.yml
 
-- name: deploy website and carry tune
+- name: install base role on demo site
   hosts: demo
   roles:
     - base
-    - website
-    - rick
