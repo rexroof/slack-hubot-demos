@@ -20,7 +20,12 @@ cd $WORKSPACE/ansible-playbooks
 if [ -f ${PLAYBOOK} ] ; then
   slack "starting \`ansible-playbook -vv ${PLAYBOOK}\`"
   ansible-playbook -vv ${PLAYBOOK}
-  slack "demo finished"
+  if [ $? -eq 0 ]
+  then
+    echo "demo.neomyte.net successfully finished"
+  else
+    echo "demo.neomyte.net error code $?"
+  fi
 else
   slack "cannot find ${PLAYBOOK}"
 fi
