@@ -22,9 +22,9 @@ if [ -f ${PLAYBOOK} ] ; then
   ansible-playbook -vv ${PLAYBOOK}
   if [ $? -eq 0 ]
   then
-    echo "demo.neomyte.net successfully finished"
+    slack "demo.neomyte.net successfully finished"
   else
-    echo "demo.neomyte.net error code $?"
+    slack "demo.neomyte.net error code $?"
   fi
 else
   slack "cannot find ${PLAYBOOK}"
