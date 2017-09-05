@@ -78,15 +78,15 @@ class CallbackModule(CallbackBase):
                 response.getcode() ) 
             )
 
-    def v2_runner_on_failed(self, res, ignore_errors=False):
+    def v2_runner_on_failed(self, result, ignore_errors=False):
         if not ignore_errors:
-            self.slack_snippet(res)
+            self.slack_snippet(result)
 
     def v2_runner_on_unreachable(self, result):
-        self.slack_snippet(res)
+        self.slack_snippet(result)
 
     def v2_runner_on_async_failed(self, result):
-        self.slack_snippet(res)
+        self.slack_snippet(result)
 
     def v2_playbook_on_play_start(self, play):
          self.play = play
